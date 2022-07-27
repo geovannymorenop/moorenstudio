@@ -284,6 +284,109 @@ button {
   align-items: center;
   max-width: 250px;
 }
+#nosotros .contenedor .texto h2 {
+  padding: 15px;
+}
+
+#brandverse2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#brandverse2 .contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+}
+#brandverse2 .contenedor .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+}
+#brandverse2 .contenedor .texto h2 {
+  padding: 15px;
+}
+
+#servicios {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+#servicios .contenedor {
+  padding: 50px 12px;
+}
+#servicios .contenedor .servicios-carta {
+  background-position: center center;
+  background-size: cover;
+  margin: 30px;
+  border-radius: 15px;
+}
+#servicios .contenedor .servicios-carta .servi {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+#servicios .contenedor .servicios-carta .servi1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/branding.jpg");
+}
+#servicios .contenedor .servicios-carta .servi2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/web-dev.jpg");
+}
+#servicios .contenedor .servicios-carta .servi3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/graphic-design.jpg");
+}
+#servicios .contenedor .servicios-carta .servi4 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/photography.jpg");
+}
+#servicios .contenedor .servicios-carta ul {
+  display: none;
+}
+
+#paquetes {
+  background-color: #fafafa;
+  color: #101010;
+  text-align: center;
+}
+#paquetes .contenedor {
+  padding: 50px 12px;
+}
+#paquetes .contenedor .paquetes-carta {
+  background-position: center center;
+  background-size: cover;
+  margin: 30px;
+  border-radius: 15px;
+  color: #fafafa;
+}
+#paquetes .contenedor .paquetes-carta .paque {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+#paquetes .contenedor .paquetes-carta .paque1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/explorer.jpg");
+}
+#paquetes .contenedor .paquetes-carta .paque2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/global.jpg");
+}
+#paquetes .contenedor .paquetes-carta .paque3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/universal.jpg");
+}
+#paquetes .contenedor .paquetes-carta p {
+  display: none;
+}
+#paquetes .contenedor .paquetes-carta ul {
+  display: none;
+}
 
 .subir {
   height: 50px;
