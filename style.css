@@ -193,10 +193,10 @@ button {
 
 #montaje {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 250px;
   width: 100%;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/bote-kraken.jpg");
@@ -204,14 +204,25 @@ button {
   background-size: cover;
   background-position: center center;
 }
-#montaje h2 {
-  color: white;
-}
-#montaje p {
-  color: white;
+#montaje .contenedor {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
+  height: 80vh;
+}
+#montaje .contenedor .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+}
+#montaje .contenedor .texto h2 {
+  color: white;
+}
+#montaje .contenedor .texto p {
+  color: white;
 }
 
 #explore {
@@ -250,6 +261,28 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#nosotros .contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+}
+#nosotros .contenedor .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
 }
 
 .subir {
