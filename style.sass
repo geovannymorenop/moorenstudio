@@ -156,23 +156,60 @@ button
         h2
             padding: 20px 0px
 
-#footer
-    background-color: rgb(30, 30, 30)
+#descubre
+    background-color: rgb(30,30,30)
+    color: white
+    text-align: center
 
-    p
-        margin: 0
-        padding: 15px
+    .contenedor
+        padding: 50px 12px
+
+        .descubre-carta
+            background-position: center center
+            background-size: cover
+            margin: 30px
+            border-radius: 15px
+
+            .carta
+                background-position: center center
+                background-size: cover
+                padding: 50px 0px
+                margin: 30px
+                border-radius: 15px
+            
+            .carta1
+                background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../media/img/branding.jpg")
+            .carta2
+                background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../media/img/web-dev.jpg')
+            .carta3
+                background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../media/img/graphic-design.jpg')
+            .carta4
+                background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../media/img/photography.jpg')
+
+            p
+                display: none
+
+#montaje
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    flex-direction: column
+    height: 250px
+    width: 100%
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../media/img/bote-kraken.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+
+    h2
         color: white
 
-    .container
-        text-align: center
-        padding: 30px 12px
-        height: 100px
-        max-width: 100%
+    p
+        color: white
         display: flex
         justify-content: center
-        align-items: flex-end
-
+        text-align: center
 
 #explore
     display: flex
@@ -193,6 +230,25 @@ button
     button
         font-size: 4vw
 
+#footer
+    background-color: rgb(30, 30, 30)
+
+    p
+        margin: 0
+        padding: 15px
+        color: white
+
+    .container
+        text-align: center
+        padding: 30px 12px
+        height: 100px
+        max-width: 100%
+        display: flex
+        justify-content: center
+        align-items: flex-end
+
+
+
 .subir
     height: 50px
     width: 50px
@@ -206,3 +262,4 @@ button
     color: white
     border: 2px $basecolor2
     border-radius: 50%
+    text-decoration: none
