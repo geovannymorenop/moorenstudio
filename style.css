@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: sovietleague;
+  src: url("./fonts/sovietleague.otf");
+}
+@font-face {
+  font-family: dmsans-regular;
+  src: url("./fonts/dmsans-regular.ttf");
+}
+@font-face {
+  font-family: dmsans-bold;
+  src: url("./fonts/dmsans-bold.ttf");
+}
+@font-face {
+  font-family: dmsans-bolditalic;
+  src: url("./fonts/dmsans-bolditalic.ttf");
+}
+@font-face {
+  font-family: dmsans-italic;
+  src: url("./fonts/dmsans-italic.ttf");
+}
+@font-face {
+  font-family: dmsans-medium;
+  src: url("./fonts/dmsans-medium.ttf");
+}
+@font-face {
+  font-family: dmsans-mediumitalic;
+  src: url("./fonts/dmsans-mediumitalic.ttf");
+}
+h1 {
+  font-family: dmsans-bold;
+  font-size: 2.8em;
+}
+
+h2 {
+  font-family: dmsans-bold;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: dmsans-medium;
+  font-size: 1.5em;
+}
+
+h4 {
+  font-family: dmsans-medium;
+  font-size: 1em;
+}
+
+p {
+  font-family: dmsans-regular;
+  font-size: 1em;
+}
+
+.logo {
+  font-family: sovietleague;
+  font-size: 2em;
+  text-decoration: none;
+  color: #101010;
+  padding: 0px 15px;
+}
+
+.logo:hover {
+  color: #292929;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+button {
+  font-family: dmsans-bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #0b1f52;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .container .menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  font-family: dmsans-bold;
+}
+
+.navbar-burguer {
+  background-image: url("./media/svg/burguer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-family: dmsans-bold;
+  font-size: 1em;
+  color: #101010;
+  text-decoration: none;
+}
+.navlinks a:hover {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,136 @@
+$logofont: sovietleague
+$regular: dmsans-regular
+$bold: dmsans-bold
+$bolditalic: dmsans-bolditalic
+$italic: dmsans-italic
+$medium: dmsans-medium
+$mediumitalic: dmsans-mediumitalic
+
+$basecolor: #101010
+$basecolorhover: #292929
+
+$sizelogo: 2em
+$sizeh1: 2.8em
+$sizeh2: 2em
+$sizeh3: 1.5em
+$sizeh4: 1em
+$sizep: 1em
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+body
+    margin: 0
+
+@font-face 
+    font-family: sovietleague
+    src: url("./fonts/sovietleague.otf")
+
+@font-face
+    font-family: dmsans-regular
+    src: url("./fonts/dmsans-regular.ttf")
+
+@font-face
+    font-family: dmsans-bold
+    src: url("./fonts/dmsans-bold.ttf")
+
+@font-face
+    font-family: dmsans-bolditalic
+    src: url("./fonts/dmsans-bolditalic.ttf")
+
+@font-face
+    font-family: dmsans-italic
+    src: url("./fonts/dmsans-italic.ttf")
+
+@font-face
+    font-family: dmsans-medium
+    src: url("./fonts/dmsans-medium.ttf")
+
+@font-face
+    font-family: dmsans-mediumitalic
+    src: url("./fonts/dmsans-mediumitalic.ttf")
+
+h1
+    font-family: $bold
+    font-size: $sizeh1
+
+h2
+    font-family: $bold
+    font-size: $sizeh2
+
+h3
+    font-family: $medium
+    font-size: $sizeh3
+
+h4
+    font-family: $medium
+    font-size: $sizeh4
+
+p
+    font-family: $regular
+    font-size: $sizep
+
+.logo
+    font-family: $logofont
+    font-size: $sizelogo
+    text-decoration: none
+    color: $basecolor
+    padding: 0px 15px
+
+.logo:hover
+    color: $basecolorhover
+
+ul
+    list-style: none
+
+.container
+    margin: 0
+    max-width: 1200px
+    overflow: hidden
+
+button
+    font-family: $bold
+    padding: 10px 30px
+    border-radius: 10px
+    border: 1px solid rgba(0, 0, 0, 0.5)
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
+    color: white
+    background-color: #0b1f52
+
+header
+    
+    .container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        .menu
+            display: flex
+            flex-direction: column
+            text-align: center
+            padding: 10px
+            font-family: $bold
+
+.navbar-burguer
+    background-image: url("./media/svg/burguer.svg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+
+.navlinks
+    display: flex
+    justify-content: right
+    align-items: center
+    font-family: $bold
+    font-size: $sizeh4
+    color: #101010
+    text-decoration: none
+
+    a:hover
+        color: black
