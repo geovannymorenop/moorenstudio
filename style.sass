@@ -8,6 +8,7 @@ $mediumitalic: dmsans-mediumitalic
 
 $basecolor: #101010
 $basecolorhover: #292929
+$basecolor2: #fafafa
 
 $sizelogo: 2em
 $sizeh1: 2.8em
@@ -90,7 +91,7 @@ ul
 
 .container
     margin: 0
-    max-width: 1200px
+    max-width: 900px
     overflow: hidden
 
 button
@@ -101,21 +102,6 @@ button
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
     color: white
     background-color: #0b1f52
-
-header
-    
-    .container
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-
-        .menu
-            display: flex
-            flex-direction: column
-            text-align: center
-            padding: 10px
-            font-family: $bold
 
 .navbar-burguer
     background-image: url("./media/svg/burguer.svg")
@@ -134,3 +120,89 @@ header
 
     a:hover
         color: black
+
+#hero
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    flex-direction: column
+    height: 500px
+    width: 100%
+    color: white
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../media/img/herobg.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+    h1
+        color: white
+
+#brandverse
+    display: flex
+    flex-direction: column
+    color: $basecolor
+    background-color: $basecolor2
+    max-width: 100%
+    padding: 100px 0px
+
+    .text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+
+        h2
+            padding: 20px 0px
+
+#footer
+    background-color: rgb(30, 30, 30)
+
+    p
+        margin: 0
+        padding: 15px
+        color: white
+
+    .container
+        text-align: center
+        padding: 30px 12px
+        height: 100px
+        max-width: 100%
+        display: flex
+        justify-content: center
+        align-items: flex-end
+
+
+#explore
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    background-color: 30,30,30
+
+    .container
+        text-align: center
+        padding: 50px 12px
+
+    h2
+        font-size: 6vw
+        padding-bottom: 12px
+
+    button
+        font-size: 4vw
+
+.subir
+    height: 50px
+    width: 50px
+    background-color: $basecolor
+    position: fixed
+    bottom: 40px
+    right: 40px
+    text-align: center
+    font-size: 20px
+    line-height: 45px
+    color: white
+    border: 2px $basecolor2
+    border-radius: 50%
