@@ -258,7 +258,6 @@ button
         justify-content: center
         align-items: flex-end
 
-
 #nosotros
     display: flex
     flex-direction: column
@@ -374,6 +373,109 @@ button
 
             ul
                 display: none
+
+#portafolio
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    max-width: 100%
+
+    .contenedor
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        
+        .texto
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            max-width: 250px
+
+            h2
+                font-size: $sizeh2
+                color: $basecolor
+                padding-top: 50px
+
+            .texto2
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                max-width: 250px
+                
+                p
+                    font-family: $bold
+
+
+        h2 
+            display: flex
+            text-decoration: none
+            color: $basecolor
+            font-size: $sizep
+            padding-bottom: 30px
+
+        .galeria-grid
+            padding-top: 5px
+            padding-bottom: 10px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-auto-rows: 160px
+            grid-template-areas:"img1 img2""img3 img4""img5 img6""img7 img8""img9 img10""img11 img12""img13 img14"
+            gap: .8em
+
+        .portafolio-galeria
+            position: relative
+            cursor: pointer
+            overflow: hidden
+
+            .portafolio-galeria:hover::before
+                transform: scale(100%)
+
+            .portafolio-galeria-foto1
+                    grid-area: img1
+
+            .portafolio-galeria-foto2
+                grid-area: img2
+
+            .portafolio-galeria-foto3
+                grid-area: img3
+
+            .portafolio-galeria-foto4
+                grid-area: img4
+
+            .portafolio-galeria-foto5
+                grid-area: img5
+
+            .portafolio-galeria-foto6
+                grid-area: img6
+
+            .portafolio-galeria-foto7
+                grid-area: img7
+
+            .portafolio-galeria-foto8
+                grid-area: img8
+
+            .portafolio-galeria-foto9
+                grid-area: img9
+
+            .portafolio-galeria-foto10
+                grid-area: img10
+
+            .portafolio-galeria-foto11
+                grid-area: img11
+
+            .portafolio-galeria-foto12
+                grid-area: img12
+
+            .galeria-img
+                width: 100%
+                height: 100%
+                object-fit: cover
 
 .subir
     height: 50px
