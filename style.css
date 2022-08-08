@@ -168,7 +168,7 @@ button {
   margin: 30px;
   border-radius: 15px;
 }
-#descubre .contenedor .descubre-carta .carta {
+#descubre .contenedor .descubre-carta .carta, #descubre .contenedor .descubre-carta .carta4, #descubre .contenedor .descubre-carta .carta3, #descubre .contenedor .descubre-carta .carta2, #descubre .contenedor .descubre-carta .carta1 {
   background-position: center center;
   background-size: cover;
   padding: 50px 0px;
@@ -327,7 +327,7 @@ button {
   margin: 30px;
   border-radius: 15px;
 }
-#servicios .contenedor .servicios-carta .servi {
+#servicios .contenedor .servicios-carta .servi, #servicios .contenedor .servicios-carta .servi4, #servicios .contenedor .servicios-carta .servi3, #servicios .contenedor .servicios-carta .servi2, #servicios .contenedor .servicios-carta .servi1 {
   background-position: center center;
   background-size: cover;
   padding: 50px 0px;
@@ -365,7 +365,7 @@ button {
   border-radius: 15px;
   color: #fafafa;
 }
-#paquetes .contenedor .paquetes-carta .paque {
+#paquetes .contenedor .paquetes-carta .paque, #paquetes .contenedor .paquetes-carta .paque3, #paquetes .contenedor .paquetes-carta .paque2, #paquetes .contenedor .paquetes-carta .paque1 {
   background-position: center center;
   background-size: cover;
   padding: 50px 0px;
@@ -506,4 +506,18 @@ button {
   border: 2px #fafafa;
   border-radius: 50%;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .descubre-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "cartat cartat" "carta1 carta2" "carta3 carta4";
+  }
+  .galeria-grid {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "img1 img2 img3" "img1 img5 img3" "img4 img5 img6" "img9 img7 img6" "img9 img11 img8" "img10 img11 img12" "img13 img14 img12";
+  }
+  .portafolio-galeria::before {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
