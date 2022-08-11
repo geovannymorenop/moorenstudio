@@ -26,7 +26,7 @@ html
     scroll-behavior: smooth
 
 body
-    margin: 0
+    max-width: 100%
 
 @font-face 
     font-family: sovietleague
@@ -91,7 +91,7 @@ ul
 
 .container
     margin: 0
-    max-width: 900px
+    max-width: 100%
     overflow: hidden
 
 button
@@ -170,7 +170,6 @@ button
         .descubre-carta
             background-position: center center
             background-size: cover
-            margin: 30px
             border-radius: 15px
 
             .carta
@@ -240,6 +239,18 @@ button
 
     button
         font-size: 4vw
+
+#contacto
+    @include formato(500px, 100%, white)
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    flex-direction: column
+    
+    .contacto-container
+        max-width: 500px
+        padding-bottom: 150px
 
 #footer
     background-color: rgb(30, 30, 30)
@@ -317,7 +328,7 @@ button
         .servicios-carta
             background-position: center center
             background-size: cover
-            margin: 30px
+
             border-radius: 15px
 
             .servi
@@ -499,15 +510,254 @@ button
     border-radius: 50%
     text-decoration: none
 
-@media (max-width:768px)
-    .descubre-grid
-        grid-template-columns: repeat(2, 1fr)
-        grid-template-areas:"cartat cartat""carta1 carta2""carta3 carta4"
+@media ( min-width: 500px )
+    #descubre
+        max-width: 100%
+
+        .contenedor
+
+            .descubre-carta
+                display: flex
+                justify-content: center
+                padding: 0px 80px
+
+                .carta
+                    background-position: center center
+                    background-size: cover
+                    padding: 50px 0px
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
+                
+                .carta1
+                    @extend .carta
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url("./media/img/branding.jpg")
+
+                    h3
+                        margin: 0
+                        padding-bottom: 20px
+
+                    p
+                        display: flex
+                        justify-content: center
+                        padding: 0px 30px
+                        margin: 0
+
+                .carta2
+                    @extend .carta
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/web-dev.jpg')
+
+                    h3
+                        margin: 0
+                        padding-bottom: 20px
+                    p
+                        display: flex
+                        justify-content: center
+                        padding: 0px 30px
+                        margin: 0
+
+                .carta3
+                    @extend .carta
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/graphic-design.jpg')
+
+                    h3
+                        margin: 0
+                        padding-bottom: 20px
+
+                    p
+                        display: flex
+                        justify-content: center
+                        padding: 0px 30px
+                        margin: 0
+
+                .carta4
+                    @extend .carta
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/photography.jpg')
+
+                    h3
+                        margin: 0
+                        padding-bottom: 20px
+
+                    p
+                        display: flex
+                        justify-content: center
+                        padding: 0px 30px
+                        margin: 0
     
-    .galeria-grid
-        grid-template-columns: 3fr 1fr
-        grid-template-areas:"img1 img2 img3""img1 img5 img3""img4 img5 img6""img9 img7 img6""img9 img11 img8""img10 img11 img12""img13 img14 img12"
+    #montaje
+        @include formato(400px, 100%, white)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../media/img/bote-kraken.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+
+        .contenedor
+            display: flex
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            height: 80vh
+
+            .texto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+
+                h2
+                    font-size: 3vw
+                    padding-bottom: 30px
+                    margin: 0
+
+                p
+                    font-size: $sizeh3
+                    width: 500px
+                    margin: 0
+
+    #explore
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        background-color: 30,30,30
+        height: 500px
+
+        .container
+            text-align: center
+            padding: 50px 12px
+
+        h2
+            font-size: 3vw
+            padding-bottom: 50px
+
+        button
+            font-size: 2vw
+
+@media ( min-width: 768px )
+    #descubre
+        max-width: 100%
+
+        .contenedor
+
+            .descubre-carta
+                display: flex
+                justify-content: center
+                padding: 0px 80px
+
+                .carta
+                    background-position: center center
+                    background-size: cover
+                    padding: 50px 0px
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
+                
+                .carta1
+                    @extend .carta
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url("./media/img/branding.jpg")
+
+                    h3
+                        margin: 0
+                        padding-bottom: 20px
+
+                    p
+                        display: flex
+                        justify-content: center
+                        padding: 0px 30px
+                        margin: 0
+
+                .carta2
+                    @extend .carta
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/web-dev.jpg')
+
+                    h3
+                        margin: 0
+                        padding-bottom: 20px
+                    p
+                        display: flex
+                        justify-content: center
+                        padding: 0px 30px
+                        margin: 0
+
+                .carta3
+                    @extend .carta
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/graphic-design.jpg')
+
+                    h3
+                        margin: 0
+                        padding-bottom: 20px
+
+                    p
+                        display: flex
+                        justify-content: center
+                        padding: 0px 30px
+                        margin: 0
+
+                .carta4
+                    @extend .carta
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/photography.jpg')
+
+                    h3
+                        margin: 0
+                        padding-bottom: 20px
+
+                    p
+                        display: flex
+                        justify-content: center
+                        padding: 0px 30px
+                        margin: 0
     
-    .portafolio-galeria::before
-        font-size: 1rem
-    
+    #montaje
+        @include formato(400px, 100%, white)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../media/img/bote-kraken.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+
+        .contenedor
+            display: flex
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            height: 80vh
+
+            .texto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+
+                h2
+                    font-size: 3vw
+                    padding-bottom: 30px
+                    margin: 0
+
+                p
+                    font-size: $sizeh3
+                    width: 500px
+                    margin: 0
+
+    #explore
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        background-color: 30,30,30
+
+        .container
+            text-align: center
+            padding: 50px 12px
+
+        h2
+            font-size: 4vw
+            padding-bottom: 12px

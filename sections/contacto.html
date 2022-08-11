@@ -51,71 +51,32 @@
     </nav>
 
     <section id="contacto">
-        <div class="container">
-            <h2>Contáctame</h2>
-            <div class="subtitulo">
-                <h3>¿Tienes un proyecto que te gustaría explorarlo</h3>
-                <p>Comunícate conmigo y empecemos a darle forma a tus ideas.</p>
-            </div>
-            <div class="formulario">
-                <form action="enviar.php" method="get" enctype="text/plain">
-                    <label for="nombre">Nombre:</label><br>
-                    <input name="Nombre" type="text" placeholder="Nombre"><br>
-                    <br>
-                    <label for="apellido">Apellido:</label><br>
-                    <input name="Apellido" type="text" placeholder="Apellido"><br>
-                    <br>
-                    <label for="celular">Celular:</label><br>
-                    <input name="Celular" type="text" placeholder="Celular"><br>
-                    <br>
-                    <label for="correo">Correo</label><br>
-                    <input name="correo" type="mail" placeholder="Correo"><br>
-                    <br>
-                    <label>Me gustaría más información sobre:</label>
-                    <br>
-                    <select name="Servicio Interesado">
-                        <option value="branding">Branding</option>
-                        <option value="desarrollo web">Desarrollo Web</option>
-                        <option value="diseño gráfico">Diseño Gráfico</option>
-                        <option value="fotografía">Fotografía</option>
-                    </select><br>
-                    <br>
-                    <label>¿De qué trata tu proyecto?</label><br>
-                    <textarea placeholder="¡Cuéntame un poco de tu proyecto!"></textarea><br>
-                    <br>
-                    <input type="submit" value="Enviar"></input>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <div class="container">
-            <h2>Contáctame</h2>
-            <form class="row g-3">
-                <div class="col-12">
-                    <label for="name-input" class="form-label">Nombre y apellido</label>
-                    <input type="text" class="form-control" id="name-input">
+        <div class="container mt-5 contacto-container">
+            <h1>Contáctame</h1>
+            <form class="row g-3 contacto-container">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="firstName" required>
                 </div>
-                <div class="col-6">
-                    <label for="email-input" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email-input">
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="lastName" required>
                 </div>
-                <div class="col-6">
-                    <label for="phone-input" class="form-label">Celular</label>
-                    <input type="text" class="form-control" id="phone-input">
+                <div class="col-md-8">
+                    <label for="emailInfo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="emailInfo" required>
                 </div>
-                <div class="col-6" id="formulario">
-                    <label for="list-input" class="form-label">Me gustaría más información sobre:</label>
-                    <input list="list" class="form-control" placeholder="Seleccionar" id="list-input">
-                    <datalist id="list">
-                        <option value="Branding"></option>
-                        <option value="Desarrollo Web"></option>
-                        <option value="Diseño Gráfico"></option>
-                        <option value="Fotografía"></option>
-                    </datalist>
+                <div class="col-md-4">
+                    <label for="phoneNumber" class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="phoneNumber">
                 </div>
-
+                <div class="col-md-12">
+                    <label for="comments" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="comments" rows="3" placeholder="Cuéntame más de tu proyecto" required></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </form>
         </div>
     </section>

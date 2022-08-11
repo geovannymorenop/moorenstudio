@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  margin: 0;
+  max-width: 100%;
 }
 
 @font-face {
@@ -83,7 +83,7 @@ ul {
 
 .container {
   margin: 0;
-  max-width: 900px;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -165,7 +165,6 @@ button {
 #descubre .contenedor .descubre-carta {
   background-position: center center;
   background-size: cover;
-  margin: 30px;
   border-radius: 15px;
 }
 #descubre .contenedor .descubre-carta .carta, #descubre .contenedor .descubre-carta .carta4, #descubre .contenedor .descubre-carta .carta3, #descubre .contenedor .descubre-carta .carta2, #descubre .contenedor .descubre-carta .carta1 {
@@ -319,7 +318,6 @@ button {
 #servicios .contenedor .servicios-carta {
   background-position: center center;
   background-size: cover;
-  margin: 30px;
   border-radius: 15px;
 }
 #servicios .contenedor .servicios-carta .servi, #servicios .contenedor .servicios-carta .servi4, #servicios .contenedor .servicios-carta .servi3, #servicios .contenedor .servicios-carta .servi2, #servicios .contenedor .servicios-carta .servi1 {
@@ -503,16 +501,233 @@ button {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .descubre-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "cartat cartat" "carta1 carta2" "carta3 carta4";
+@media (min-width: 500px) {
+  #descubre {
+    max-width: 100%;
   }
-  .galeria-grid {
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: "img1 img2 img3" "img1 img5 img3" "img4 img5 img6" "img9 img7 img6" "img9 img11 img8" "img10 img11 img12" "img13 img14 img12";
+  #descubre .contenedor .descubre-carta {
+    display: flex;
+    justify-content: center;
+    padding: 0px 80px;
   }
-  .portafolio-galeria::before {
-    font-size: 1rem;
+  #descubre .contenedor .descubre-carta .carta, #descubre .contenedor .descubre-carta .carta1, #descubre .contenedor .descubre-carta .carta2, #descubre .contenedor .descubre-carta .carta3, #descubre .contenedor .descubre-carta .carta4 {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  #descubre .contenedor .descubre-carta .carta1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/branding-cropped.jpg");
+  }
+  #descubre .contenedor .descubre-carta .carta1 h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  #descubre .contenedor .descubre-carta .carta1 p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+    margin: 0;
+  }
+  #descubre .contenedor .descubre-carta .carta2 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/web-dev.jpg");
+  }
+  #descubre .contenedor .descubre-carta .carta2 h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  #descubre .contenedor .descubre-carta .carta2 p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+    margin: 0;
+  }
+  #descubre .contenedor .descubre-carta .carta3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/graphic-design-cropped.jpg");
+  }
+  #descubre .contenedor .descubre-carta .carta3 h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  #descubre .contenedor .descubre-carta .carta3 p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+    margin: 0;
+  }
+  #descubre .contenedor .descubre-carta .carta4 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/photography-cropped.jpg");
+  }
+  #descubre .contenedor .descubre-carta .carta4 h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  #descubre .contenedor .descubre-carta .carta4 p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+    margin: 0;
+  }
+  #montaje {
+    height: 400px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/bote-kraken.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  #montaje .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+  }
+  #montaje .contenedor .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #montaje .contenedor .texto h2 {
+    font-size: 3vw;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  #montaje .contenedor .texto p {
+    font-size: 1.5em;
+    width: 500px;
+    margin: 0;
+  }
+  #explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: 30, 30, 30;
+    height: 500px;
+  }
+  #explore .container {
+    text-align: center;
+    padding: 50px 12px;
+  }
+  #explore h2 {
+    font-size: 3vw;
+    padding-bottom: 50px;
+  }
+  #explore button {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 500px) {
+  #descubre {
+    max-width: 100%;
+  }
+  #descubre .contenedor .descubre-carta {
+    display: flex;
+    justify-content: center;
+    padding: 0px 80px;
+  }
+  #descubre .contenedor .descubre-carta .carta, #descubre .contenedor .descubre-carta .carta1, #descubre .contenedor .descubre-carta .carta2, #descubre .contenedor .descubre-carta .carta3, #descubre .contenedor .descubre-carta .carta4 {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  #descubre .contenedor .descubre-carta .carta1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/branding-cropped.jpg");
+  }
+  #descubre .contenedor .descubre-carta .carta1 h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  #descubre .contenedor .descubre-carta .carta1 p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+    margin: 0;
+  }
+  #descubre .contenedor .descubre-carta .carta2 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/web-dev.jpg");
+  }
+  #descubre .contenedor .descubre-carta .carta2 h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  #descubre .contenedor .descubre-carta .carta2 p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+    margin: 0;
+  }
+  #descubre .contenedor .descubre-carta .carta3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/graphic-design-cropped.jpg");
+  }
+  #descubre .contenedor .descubre-carta .carta3 h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  #descubre .contenedor .descubre-carta .carta3 p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+    margin: 0;
+  }
+  #descubre .contenedor .descubre-carta .carta4 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/photography-cropped.jpg");
+  }
+  #descubre .contenedor .descubre-carta .carta4 h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  #descubre .contenedor .descubre-carta .carta4 p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+    margin: 0;
+  }
+  #montaje {
+    height: 400px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/bote-kraken.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  #montaje .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+  }
+  #montaje .contenedor .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #montaje .contenedor .texto h2 {
+    font-size: 3vw;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  #montaje .contenedor .texto p {
+    font-size: 1.5em;
+    width: 500px;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
