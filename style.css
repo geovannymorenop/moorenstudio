@@ -323,18 +323,23 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   height: 80vh;
+  max-width: 350px;
 }
 #nosotros .contenedor .texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 250px;
+  max-width: 300px;
 }
 #nosotros .contenedor .texto h2 {
   padding: 15px;
+}
+#nosotros .contenedor .texto p {
+  padding: 0px 20px;
 }
 
 #brandverse2 {
@@ -876,5 +881,35 @@ button {
   }
   #paquetes .contenedor .paquetes-carta .paque3 .quiero {
     display: block;
+  }
+}
+@media (min-width: 610px) {
+  #nosotros .contenedor {
+    max-width: 600px;
+  }
+  #nosotros .contenedor .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+  }
+  #nosotros .contenedor .texto h2 {
+    padding: 15px;
+  }
+}
+@media (min-width: 930px) {
+  #nosotros .contenedor {
+    max-width: 800px;
+  }
+  #nosotros .contenedor .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
+  }
+  #nosotros .contenedor .texto h2 {
+    padding: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

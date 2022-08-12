@@ -323,18 +323,23 @@ button
         display: flex
         flex-direction: column
         justify-content: center
+        align-items: center
         text-align: center
         height: 80vh
+        max-width: 350px
 
         .texto
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
-            max-width: 250px
+            max-width: 300px
 
             h2
                 padding: 15px
+
+            p
+                padding: 0px 20px
 
 #brandverse2
     display: flex
@@ -883,3 +888,37 @@ button
 
                     .quiero
                         display: block
+
+@media ( min-width: 610px )
+
+    #nosotros
+
+        .contenedor
+            max-width: 600px
+
+            .texto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                max-width: 550px
+                
+                h2
+                    padding: 15px
+
+@media ( min-width: 930px )
+
+    #nosotros
+
+        .contenedor
+            max-width: 800px
+
+            .texto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                max-width: 750px
+                
+                h2
+                    padding: 15px
