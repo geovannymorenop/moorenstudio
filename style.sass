@@ -107,6 +107,7 @@ button
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
     color: white
     background-color: #0b1f52
+    margin: 0
 
 .navbar-burguer
     background-image: url("./media/svg/burguer.svg")
@@ -382,24 +383,37 @@ button
         padding: 50px 12px
 
         .servicios-carta
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
             background-position: center center
             background-size: cover
-
             border-radius: 15px
 
             .servi
+                display: flex
+                flex-direction: column
+                justify-content: center
                 background-position: center center
                 background-size: cover
                 padding: 50px 0px
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
                 margin: 30px
                 border-radius: 15px
+                width: 300px
+                height: 150px
+                text-align: center
             
             .servi1
                 @extend .servi
                 background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./media/img/branding.jpg")
+            
             .servi2
                 @extend .servi
                 background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./media/img/web-dev.jpg')
+            
             .servi3
                 @extend .servi
                 background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./media/img/graphic-design.jpg')
@@ -407,8 +421,19 @@ button
                 @extend .servi
                 background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./media/img/photography.jpg')
 
+            h3
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-content: center
+                margin: 0
+                padding: 20px 0px
+
             ul
                 display: none
+
+            .cotizar
+                padding: 0px 0px 20px
 
 #paquetes
     background-color: $basecolor2
@@ -419,9 +444,13 @@ button
         padding: 50px 12px
 
         .paquetes-carta
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
             background-position: center center
             background-size: cover
-            margin: 30px
             border-radius: 15px
             color: $basecolor2
 
@@ -429,8 +458,12 @@ button
                 background-position: center center
                 background-size: cover
                 padding: 50px 0px
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
                 margin: 30px
                 border-radius: 15px
+                width: 300px
+                height: 150px
+                text-align: center
             
             .paque1
                 @extend .paque
@@ -567,6 +600,7 @@ button
     text-decoration: none
 
 @media ( min-width: 768px )
+
     #descubre
         
         .contenedor
@@ -680,7 +714,7 @@ button
         align-items: center
         text-align: center
         background-color: 30,30,30
-        height: 500px
+        height: 300px
 
         .container
             text-align: center
@@ -700,6 +734,7 @@ button
             .servicios-carta
                 padding: 0px 80px
                 display: flex
+                justify-content: center
                 flex-wrap: wrap
                 flex-direction: row
                 
@@ -933,3 +968,25 @@ button
                 
                 h2
                     padding: 15px
+
+@media ( min-width: 1200px )
+
+    #explore
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        background-color: 30,30,30
+        height: 400px
+
+        .container
+            text-align: center
+            padding: 50px 12px
+
+        h2
+            font-size: 2vw
+            padding-bottom: 50px
+
+        button
+            font-size: 1.8vw

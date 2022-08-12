@@ -100,6 +100,7 @@ button {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   color: white;
   background-color: #0b1f52;
+  margin: 0;
 }
 
 .navbar-burguer {
@@ -384,16 +385,28 @@ button {
   padding: 50px 12px;
 }
 #servicios .contenedor .servicios-carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   background-position: center center;
   background-size: cover;
   border-radius: 15px;
 }
 #servicios .contenedor .servicios-carta .servi, #servicios .contenedor .servicios-carta .servi4, #servicios .contenedor .servicios-carta .servi3, #servicios .contenedor .servicios-carta .servi2, #servicios .contenedor .servicios-carta .servi1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-position: center center;
   background-size: cover;
   padding: 50px 0px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   margin: 30px;
   border-radius: 15px;
+  width: 300px;
+  height: 150px;
+  text-align: center;
 }
 #servicios .contenedor .servicios-carta .servi1 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./media/img/branding.jpg");
@@ -407,8 +420,19 @@ button {
 #servicios .contenedor .servicios-carta .servi4 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./media/img/photography.jpg");
 }
+#servicios .contenedor .servicios-carta h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  padding: 20px 0px;
+}
 #servicios .contenedor .servicios-carta ul {
   display: none;
+}
+#servicios .contenedor .servicios-carta .cotizar {
+  padding: 0px 0px 20px;
 }
 
 #paquetes {
@@ -420,9 +444,13 @@ button {
   padding: 50px 12px;
 }
 #paquetes .contenedor .paquetes-carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   background-position: center center;
   background-size: cover;
-  margin: 30px;
   border-radius: 15px;
   color: #fafafa;
 }
@@ -430,8 +458,12 @@ button {
   background-position: center center;
   background-size: cover;
   padding: 50px 0px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   margin: 30px;
   border-radius: 15px;
+  width: 300px;
+  height: 150px;
+  text-align: center;
 }
 #paquetes .contenedor .paquetes-carta .paque1 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./media/img/explorer.jpg");
@@ -681,7 +713,7 @@ button {
     align-items: center;
     text-align: center;
     background-color: 30, 30, 30;
-    height: 500px;
+    height: 300px;
   }
   #explore .container {
     text-align: center;
@@ -697,6 +729,7 @@ button {
   #servicios .contenedor .servicios-carta {
     padding: 0px 80px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
   }
@@ -922,5 +955,27 @@ button {
   }
   #nosotros .contenedor .texto h2 {
     padding: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  #explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: 30, 30, 30;
+    height: 400px;
+  }
+  #explore .container {
+    text-align: center;
+    padding: 50px 12px;
+  }
+  #explore h2 {
+    font-size: 2vw;
+    padding-bottom: 50px;
+  }
+  #explore button {
+    font-size: 1.8vw;
   }
 }/*# sourceMappingURL=style.css.map */
