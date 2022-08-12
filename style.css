@@ -42,32 +42,37 @@ body {
 }
 h1 {
   font-family: dmsans-bold;
-  font-size: 2.8em;
+  font-size: 2.8rem;
+  margin: 0;
 }
 
 h2 {
   font-family: dmsans-bold;
-  font-size: 2em;
+  font-size: 2rem;
+  margin: 0;
 }
 
 h3 {
   font-family: dmsans-medium;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 h4 {
   font-family: dmsans-medium;
-  font-size: 1em;
+  font-size: 1rem;
+  margin: 0;
 }
 
 p {
   font-family: dmsans-regular;
-  font-size: 1em;
+  font-size: 1rem;
+  margin: 0;
 }
 
 .logo {
   font-family: sovietleague;
-  font-size: 2em;
+  font-size: 2rem;
   text-decoration: none;
   color: #101010;
   padding: 0px 15px;
@@ -109,7 +114,7 @@ button {
   justify-content: right;
   align-items: center;
   font-family: dmsans-bold;
-  font-size: 1em;
+  font-size: 1rem;
   color: #101010;
   text-decoration: none;
 }
@@ -133,6 +138,11 @@ button {
 }
 #hero h1 {
   color: white;
+  padding: 20px 30px;
+}
+#hero p {
+  margin: 0;
+  padding: 50px;
 }
 
 #brandverse {
@@ -151,18 +161,34 @@ button {
   text-align: center;
 }
 #brandverse .text h2 {
-  padding: 20px 0px;
+  padding: 20px 30px;
+  margin: 0;
+}
+#brandverse .text p {
+  margin: 0;
+  padding: 50px;
 }
 
 #descubre {
   background-color: rgb(30, 30, 30);
   color: white;
   text-align: center;
+  max-width: 100%;
 }
 #descubre .contenedor {
   padding: 50px 12px;
+  max-width: 100%;
+}
+#descubre .contenedor h2 {
+  margin: 0;
+  padding: 0px 10px;
 }
 #descubre .contenedor .descubre-carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   background-position: center center;
   background-size: cover;
   border-radius: 15px;
@@ -171,8 +197,12 @@ button {
   background-position: center center;
   background-size: cover;
   padding: 50px 0px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   margin: 30px;
   border-radius: 15px;
+  width: 300px;
+  height: 150px;
+  text-align: center;
 }
 #descubre .contenedor .descubre-carta .carta1 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./media/img/branding.jpg");
@@ -185,6 +215,13 @@ button {
 }
 #descubre .contenedor .descubre-carta .carta4 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./media/img/photography.jpg");
+}
+#descubre .contenedor .descubre-carta h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
 }
 #descubre .contenedor .descubre-carta p {
   display: none;
@@ -199,7 +236,7 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/bote-kraken.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./media/img/bote-kraken.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -217,6 +254,9 @@ button {
   justify-content: center;
   align-items: center;
   max-width: 250px;
+}
+#montaje .contenedor .texto h2 {
+  padding: 0px 0px 20px 0px;
 }
 
 #explore {
@@ -419,7 +459,7 @@ button {
   max-width: 250px;
 }
 #portafolio .contenedor .texto h2 {
-  font-size: 2em;
+  font-size: 2rem;
   color: #101010;
   padding-top: 50px;
 }
@@ -437,7 +477,7 @@ button {
   display: flex;
   text-decoration: none;
   color: #101010;
-  font-size: 1em;
+  font-size: 1rem;
   padding-bottom: 30px;
 }
 #portafolio .contenedor .galeria-grid {
@@ -516,27 +556,32 @@ button {
   text-decoration: none;
 }
 
-@media (min-width: 500px) {
-  #descubre {
-    max-width: 100%;
-  }
+@media (min-width: 768px) {
   #descubre .contenedor .descubre-carta {
-    display: flex;
-    justify-content: center;
     padding: 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   #descubre .contenedor .descubre-carta .carta, #descubre .contenedor .descubre-carta .carta1, #descubre .contenedor .descubre-carta .carta2, #descubre .contenedor .descubre-carta .carta3, #descubre .contenedor .descubre-carta .carta4 {
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
   }
   #descubre .contenedor .descubre-carta .carta1 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/branding.jpg");
   }
   #descubre .contenedor .descubre-carta .carta1 h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0px 20px 20px 20px;
   }
   #descubre .contenedor .descubre-carta .carta1 p {
     display: flex;
@@ -549,7 +594,7 @@ button {
   }
   #descubre .contenedor .descubre-carta .carta2 h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0px 20px 20px 20px;
   }
   #descubre .contenedor .descubre-carta .carta2 p {
     display: flex;
@@ -562,7 +607,7 @@ button {
   }
   #descubre .contenedor .descubre-carta .carta3 h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0px 20px 20px 20px;
   }
   #descubre .contenedor .descubre-carta .carta3 p {
     display: flex;
@@ -575,7 +620,7 @@ button {
   }
   #descubre .contenedor .descubre-carta .carta4 h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0px 20px 20px 20px;
   }
   #descubre .contenedor .descubre-carta .carta4 p {
     display: flex;
@@ -592,7 +637,7 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/bote-kraken.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./media/img/bote-kraken.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -616,7 +661,7 @@ button {
     margin: 0;
   }
   #montaje .contenedor .texto p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     width: 500px;
     margin: 0;
   }
@@ -743,6 +788,7 @@ button {
     display: flex;
     justify-content: center;
     padding: 0px 100px;
+    flex-wrap: wrap;
   }
   #paquetes .contenedor .paquetes-carta .paque, #paquetes .contenedor .paquetes-carta .paque1, #paquetes .contenedor .paquetes-carta .paque2, #paquetes .contenedor .paquetes-carta .paque3 {
     background-position: center center;
@@ -830,126 +876,5 @@ button {
   }
   #paquetes .contenedor .paquetes-carta .paque3 .quiero {
     display: block;
-  }
-}
-@media (min-width: 768px) {
-  #descubre {
-    max-width: 100%;
-  }
-  #descubre .contenedor .descubre-carta {
-    display: flex;
-    justify-content: center;
-    padding: 0px 80px;
-  }
-  #descubre .contenedor .descubre-carta .carta, #descubre .contenedor .descubre-carta .carta1, #descubre .contenedor .descubre-carta .carta2, #descubre .contenedor .descubre-carta .carta3, #descubre .contenedor .descubre-carta .carta4 {
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  }
-  #descubre .contenedor .descubre-carta .carta1 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/branding.jpg");
-  }
-  #descubre .contenedor .descubre-carta .carta1 h3 {
-    margin: 0;
-    padding-bottom: 20px;
-  }
-  #descubre .contenedor .descubre-carta .carta1 p {
-    display: flex;
-    justify-content: center;
-    padding: 0px 30px;
-    margin: 0;
-  }
-  #descubre .contenedor .descubre-carta .carta2 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/web-dev.jpg");
-  }
-  #descubre .contenedor .descubre-carta .carta2 h3 {
-    margin: 0;
-    padding-bottom: 20px;
-  }
-  #descubre .contenedor .descubre-carta .carta2 p {
-    display: flex;
-    justify-content: center;
-    padding: 0px 30px;
-    margin: 0;
-  }
-  #descubre .contenedor .descubre-carta .carta3 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/graphic-design.jpg");
-  }
-  #descubre .contenedor .descubre-carta .carta3 h3 {
-    margin: 0;
-    padding-bottom: 20px;
-  }
-  #descubre .contenedor .descubre-carta .carta3 p {
-    display: flex;
-    justify-content: center;
-    padding: 0px 30px;
-    margin: 0;
-  }
-  #descubre .contenedor .descubre-carta .carta4 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/photography.jpg");
-  }
-  #descubre .contenedor .descubre-carta .carta4 h3 {
-    margin: 0;
-    padding-bottom: 20px;
-  }
-  #descubre .contenedor .descubre-carta .carta4 p {
-    display: flex;
-    justify-content: center;
-    padding: 0px 30px;
-    margin: 0;
-  }
-  #montaje {
-    height: 400px;
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/img/bote-kraken.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-  #montaje .contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 80vh;
-  }
-  #montaje .contenedor .texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #montaje .contenedor .texto h2 {
-    font-size: 3vw;
-    padding-bottom: 30px;
-    margin: 0;
-  }
-  #montaje .contenedor .texto p {
-    font-size: 1.5em;
-    width: 500px;
-    margin: 0;
-  }
-  #explore {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: 30, 30, 30;
-  }
-  #explore .container {
-    text-align: center;
-    padding: 50px 12px;
-  }
-  #explore h2 {
-    font-size: 4vw;
-    padding-bottom: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

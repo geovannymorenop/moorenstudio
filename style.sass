@@ -10,12 +10,12 @@ $basecolor: #101010
 $basecolorhover: #292929
 $basecolor2: #fafafa
 
-$sizelogo: 2em
-$sizeh1: 2.8em
-$sizeh2: 2em
-$sizeh3: 1.5em
-$sizeh4: 1em
-$sizep: 1em
+$sizelogo: 2rem
+$sizeh1: 2.8rem
+$sizeh2: 2rem
+$sizeh3: 1.5rem
+$sizeh4: 1rem
+$sizep: 1rem
 
 *
     margin: 0
@@ -59,22 +59,27 @@ body
 h1
     font-family: $bold
     font-size: $sizeh1
+    margin: 0
 
 h2
     font-family: $bold
     font-size: $sizeh2
+    margin: 0
 
 h3
     font-family: $medium
     font-size: $sizeh3
+    margin: 0
 
 h4
     font-family: $medium
     font-size: $sizeh4
+    margin: 0
 
 p
     font-family: $regular
     font-size: $sizep
+    margin: 0
 
 .logo
     font-family: $logofont
@@ -140,6 +145,11 @@ button
 
     h1
         color: white
+        padding: 20px 30px
+
+    p
+            margin: 0
+            padding: 50px
 
 #brandverse
     display: flex
@@ -157,17 +167,33 @@ button
         text-align: center
 
         h2
-            padding: 20px 0px
+            padding: 20px 30px
+            margin: 0
+
+        p
+            margin: 0
+            padding: 50px
 
 #descubre
     background-color: rgb(30,30,30)
     color: white
     text-align: center
+    max-width: 100%
 
     .contenedor
         padding: 50px 12px
+        max-width: 100%
+
+        h2
+            margin: 0
+            padding: 0px 10px
 
         .descubre-carta
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
             background-position: center center
             background-size: cover
             border-radius: 15px
@@ -176,21 +202,35 @@ button
                 background-position: center center
                 background-size: cover
                 padding: 50px 0px
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
                 margin: 30px
                 border-radius: 15px
+                width: 300px
+                height: 150px
+                text-align: center
             
             .carta1
                 @extend .carta
                 background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./media/img/branding.jpg")
+            
             .carta2
                 @extend .carta
                 background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./media/img/web-dev.jpg')
+            
             .carta3
                 @extend .carta
                 background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./media/img/graphic-design.jpg')
+
             .carta4
                 @extend .carta
                 background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./media/img/photography.jpg')
+
+            h3
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-content: center
+                margin: 0
 
             p
                 display: none
@@ -202,7 +242,7 @@ button
     justify-content: center
     align-items: center
     text-align: center
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../media/img/bote-kraken.jpg')
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./media/img/bote-kraken.jpg')
     background-repeat: no-repeat
     background-size: cover
     background-position: center center
@@ -220,6 +260,9 @@ button
             justify-content: center
             align-items: center
             max-width: 250px
+
+            h2
+                padding: 0px 0px 20px 0px
 
 #explore
     display: flex
@@ -510,29 +553,36 @@ button
     border-radius: 50%
     text-decoration: none
 
-@media ( min-width: 500px )
+@media ( min-width: 768px )
     #descubre
-        max-width: 100%
-
+        
         .contenedor
 
             .descubre-carta
-                display: flex
-                justify-content: center
                 padding: 0px 80px
+                display: flex
+                flex-wrap: wrap
+                flex-direction: row
 
                 .carta
                     background-position: center center
                     background-size: cover
                     padding: 50px 0px
                     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
+                    width: 250px
+                    height: 300px
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-content: center
+                    text-align: center
                 
                 .carta1
                     background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url("./media/img/branding.jpg")
 
                     h3
                         margin: 0
-                        padding-bottom: 20px
+                        padding: 0px 20px 20px 20px
 
                     p
                         display: flex
@@ -545,7 +595,7 @@ button
 
                     h3
                         margin: 0
-                        padding-bottom: 20px
+                        padding: 0px 20px 20px 20px
                     p
                         display: flex
                         justify-content: center
@@ -557,7 +607,7 @@ button
 
                     h3
                         margin: 0
-                        padding-bottom: 20px
+                        padding: 0px 20px 20px 20px
 
                     p
                         display: flex
@@ -570,7 +620,7 @@ button
 
                     h3
                         margin: 0
-                        padding-bottom: 20px
+                        padding: 0px 20px 20px 20px
 
                     p
                         display: flex
@@ -585,7 +635,7 @@ button
         justify-content: center
         align-items: center
         text-align: center
-        background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../media/img/bote-kraken.jpg')
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./media/img/bote-kraken.jpg')
         background-repeat: no-repeat
         background-size: cover
         background-position: center center
@@ -745,6 +795,7 @@ button
                 display: flex
                 justify-content: center
                 padding: 0px 100px
+                flex-wrap: wrap
 
                 .paque
                     background-position: center center
@@ -832,127 +883,3 @@ button
 
                     .quiero
                         display: block
-
-@media ( min-width: 768px )
-    #descubre
-        max-width: 100%
-
-        .contenedor
-
-            .descubre-carta
-                display: flex
-                justify-content: center
-                padding: 0px 80px
-
-                .carta
-                    background-position: center center
-                    background-size: cover
-                    padding: 50px 0px
-                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
-                
-                .carta1
-                    @extend .carta
-                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url("./media/img/branding.jpg")
-
-                    h3
-                        margin: 0
-                        padding-bottom: 20px
-
-                    p
-                        display: flex
-                        justify-content: center
-                        padding: 0px 30px
-                        margin: 0
-
-                .carta2
-                    @extend .carta
-                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/web-dev.jpg')
-
-                    h3
-                        margin: 0
-                        padding-bottom: 20px
-                    p
-                        display: flex
-                        justify-content: center
-                        padding: 0px 30px
-                        margin: 0
-
-                .carta3
-                    @extend .carta
-                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/graphic-design.jpg')
-
-                    h3
-                        margin: 0
-                        padding-bottom: 20px
-
-                    p
-                        display: flex
-                        justify-content: center
-                        padding: 0px 30px
-                        margin: 0
-
-                .carta4
-                    @extend .carta
-                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/photography.jpg')
-
-                    h3
-                        margin: 0
-                        padding-bottom: 20px
-
-                    p
-                        display: flex
-                        justify-content: center
-                        padding: 0px 30px
-                        margin: 0
-    
-    #montaje
-        @include formato(400px, 100%, white)
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        text-align: center
-        background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../media/img/bote-kraken.jpg')
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center center
-
-        .contenedor
-            display: flex
-            flex-direction: column
-            justify-content: center
-            text-align: center
-            height: 80vh
-
-            .texto
-                display: flex
-                flex-direction: column
-                justify-content: center
-                align-items: center
-
-
-                h2
-                    font-size: 3vw
-                    padding-bottom: 30px
-                    margin: 0
-
-                p
-                    font-size: $sizeh3
-                    width: 500px
-                    margin: 0
-
-    #explore
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        text-align: center
-        background-color: 30,30,30
-
-        .container
-            text-align: center
-            padding: 50px 12px
-
-        h2
-            font-size: 4vw
-            padding-bottom: 12px
