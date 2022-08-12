@@ -142,7 +142,7 @@ button {
 }
 #hero p {
   margin: 0;
-  padding: 50px;
+  padding: 30px;
 }
 
 #brandverse {
@@ -166,7 +166,7 @@ button {
 }
 #brandverse .text p {
   margin: 0;
-  padding: 50px;
+  padding: 30px;
 }
 
 #descubre {
@@ -253,10 +253,13 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 250px;
+  min-width: 300px;
 }
 #montaje .contenedor .texto h2 {
   padding: 0px 0px 20px 0px;
+}
+#montaje .contenedor .texto p {
+  padding: 0px 30px;
 }
 
 #explore {
@@ -353,18 +356,23 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   height: 80vh;
+  width: 350px;
 }
 #brandverse2 .contenedor .texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 250px;
+  max-width: 300px;
 }
 #brandverse2 .contenedor .texto h2 {
   padding: 15px;
+}
+#brandverse2 .contenedor .texto p {
+  padding: 0px 20px;
 }
 
 #servicios {
@@ -659,15 +667,11 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 700px;
   }
   #montaje .contenedor .texto h2 {
     font-size: 3vw;
     padding-bottom: 30px;
-    margin: 0;
-  }
-  #montaje .contenedor .texto p {
-    font-size: 1.5rem;
-    width: 500px;
     margin: 0;
   }
   #explore {
@@ -690,24 +694,31 @@ button {
   #explore button {
     font-size: 2vw;
   }
-  #servicios .contenedor h2 {
-    margin: 0;
-  }
   #servicios .contenedor .servicios-carta {
+    padding: 0px 80px;
     display: flex;
-    justify-content: center;
-    padding: 0px 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
-  #servicios .contenedor .servicios-carta .servi1 {
+  #servicios .contenedor .servicios-carta .servi, #servicios .contenedor .servicios-carta .servi1, #servicios .contenedor .servicios-carta .servi2, #servicios .contenedor .servicios-carta .servi3, #servicios .contenedor .servicios-carta .servi4 {
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./media/img/branding.jpg");
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  #servicios .contenedor .servicios-carta .servi1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/branding.jpg");
   }
   #servicios .contenedor .servicios-carta .servi1 h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0px 20px 20px 20px;
   }
   #servicios .contenedor .servicios-carta .servi1 ul {
     display: flex;
@@ -724,11 +735,11 @@ button {
     display: block;
   }
   #servicios .contenedor .servicios-carta .servi2 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./media/img/web-dev.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./media/img/web-dev.jpg");
   }
   #servicios .contenedor .servicios-carta .servi2 h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0px 20px 20px 20px;
   }
   #servicios .contenedor .servicios-carta .servi2 ul {
     display: flex;
@@ -749,7 +760,7 @@ button {
   }
   #servicios .contenedor .servicios-carta .servi3 h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0px 20px 20px 20px;
   }
   #servicios .contenedor .servicios-carta .servi3 ul {
     display: flex;
@@ -770,7 +781,7 @@ button {
   }
   #servicios .contenedor .servicios-carta .servi4 h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0px 20px 20px 20px;
   }
   #servicios .contenedor .servicios-carta .servi4 ul {
     display: flex;

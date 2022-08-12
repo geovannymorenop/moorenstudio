@@ -149,7 +149,7 @@ button
 
     p
             margin: 0
-            padding: 50px
+            padding: 30px
 
 #brandverse
     display: flex
@@ -172,7 +172,7 @@ button
 
         p
             margin: 0
-            padding: 50px
+            padding: 30px
 
 #descubre
     background-color: rgb(30,30,30)
@@ -259,10 +259,13 @@ button
             flex-direction: column
             justify-content: center
             align-items: center
-            max-width: 250px
+            min-width: 300px
 
             h2
                 padding: 0px 0px 20px 0px
+
+            p
+                padding: 0px 30px
 
 #explore
     display: flex
@@ -352,18 +355,23 @@ button
         display: flex
         flex-direction: column
         justify-content: center
+        align-items: center
         text-align: center
         height: 80vh
+        width: 350px
 
         .texto
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
-            max-width: 250px
+            max-width: 300px
 
             h2
                 padding: 15px
+
+            p
+                padding: 0px 20px
 
 #servicios
     background-color: rgb(30,30,30)
@@ -657,16 +665,12 @@ button
                 flex-direction: column
                 justify-content: center
                 align-items: center
+                max-width: 700px
 
 
                 h2
                     font-size: 3vw
                     padding-bottom: 30px
-                    margin: 0
-
-                p
-                    font-size: $sizeh3
-                    width: 500px
                     margin: 0
 
     #explore
@@ -693,24 +697,31 @@ button
         
         .contenedor
 
-            h2
-                margin: 0
-
             .servicios-carta
+                padding: 0px 80px
                 display: flex
-                justify-content: center
-                padding: 0px 100px
+                flex-wrap: wrap
+                flex-direction: row
                 
-                .servi1
+                .servi
                     background-position: center center
                     background-size: cover
                     padding: 50px 0px
                     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
-                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./media/img/branding.jpg")
+                    width: 250px
+                    height: 300px
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-content: center
+                    text-align: center
+
+                .servi1
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url("./media/img/branding.jpg")
 
                     h3
                         margin: 0
-                        padding-bottom: 20px
+                        padding: 0px 20px 20px 20px
 
                     ul
                         display: flex
@@ -727,11 +738,11 @@ button
                         display: block
 
                 .servi2
-                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./media/img/web-dev.jpg')
+                    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./media/img/web-dev.jpg')
 
                     h3
                         margin: 0
-                        padding-bottom: 20px
+                        padding: 0px 20px 20px 20px
 
                     ul
                         display: flex
@@ -752,7 +763,7 @@ button
 
                     h3
                         margin: 0
-                        padding-bottom: 20px
+                        padding: 0px 20px 20px 20px
 
                     ul
                         display: flex
@@ -773,7 +784,7 @@ button
 
                     h3
                         margin: 0
-                        padding-bottom: 20px
+                        padding: 0px 20px 20px 20px
 
                     ul
                         display: flex
