@@ -51,33 +51,54 @@
     </nav>
 
     <section id="contacto">
-        <div class="container mt-5 contacto-container">
-            <h1>Contáctame</h1>
-            <form class="row g-3 contacto-container">
-                <div class="col-md-6">
-                    <label for="firstName" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="firstName" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="lastName" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="lastName" required>
-                </div>
-                <div class="col-md-8">
-                    <label for="emailInfo" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="emailInfo" required>
-                </div>
-                <div class="col-md-4">
-                    <label for="phoneNumber" class="form-label">Celular</label>
-                    <input type="text" class="form-control" id="phoneNumber">
-                </div>
-                <div class="col-md-12">
-                    <label for="comments" class="form-label">Comentarios</label>
-                    <textarea class="form-control" id="comments" rows="3" placeholder="Cuéntame más de tu proyecto" required></textarea>
-                </div>
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
-            </form>
+        <div class="container">
+            <h2 class="contacto-h2">Contáctame</h2>
+            <div class="contacto-container">
+                <form class="row g-3">
+                    <div class="col-12">
+                        <label for="name-input" class="form-label" required>Nombre y apellido</label>
+                        <input type="text" class="form-control" id="name-input">
+                    </div>
+                    <div class="col-6">
+                        <label for="email-input" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email-input">
+                    </div>
+                    <div class="col-6">
+                        <label for="phone-input" class="form-label">Celular</label>
+                        <input type="text" class="form-control" id="phone-input">
+                    </div>
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm Más info sobre">
+                        <option selected>Más info sobre</option>
+                        <option value="1">Branding</option>
+                        <option value="2">Desarrollo Web</option>
+                        <option value="3">Diseño Gráfico</option>
+                        <option value="4">Fotografía</option>
+                    </select>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Cuéntame sobre tu proyecto:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="check-box">
+                        <label for="check-box" class="form-label">Me gustaría me contacten por:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">Mensaje WhatsApp</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Llamada</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Correo</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 

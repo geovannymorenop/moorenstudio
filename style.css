@@ -283,19 +283,34 @@ button {
   font-size: 4vw;
 }
 
-#contacto {
-  height: 500px;
-  width: 100%;
-  color: white;
+#contacto .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 0px 20px;
 }
-#contacto .contacto-container {
-  max-width: 500px;
-  padding-bottom: 150px;
+#contacto .container .contacto-h2 {
+  padding: 50px 0px;
+}
+#contacto .container .contacto-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: 300px;
+  font-family: dmsans-regular;
+  padding: 0px 0px 80px;
+}
+#contacto .container .contacto-container .g-3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#contacto .container .contacto-container .btn-primary {
+  box-shadow: none;
 }
 
 #footer {
@@ -1047,6 +1062,35 @@ button {
     color: #101010;
     font-size: 1.5rem;
     padding: 60px;
+  }
+  #contacto .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  #contacto .container .contacto-h2 {
+    padding: 50px 0px;
+  }
+  #contacto .container .contacto-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 500px;
+    font-family: dmsans-regular;
+    padding: 0px 0px 80px;
+  }
+  #contacto .container .contacto-container .g-3 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  #contacto .container .contacto-container .btn-primary {
+    box-shadow: none;
   }
 }
 @media (min-width: 610px) {

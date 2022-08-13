@@ -288,16 +288,35 @@ button
         font-size: 4vw
 
 #contacto
-    @include formato(500px, 100%, white)
-    display: flex
-    align-items: center
-    justify-content: center
-    text-align: center
-    flex-direction: column
-    
-    .contacto-container
-        max-width: 500px
-        padding-bottom: 150px
+
+    .container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+        padding: 0px 20px
+
+        .contacto-h2
+            padding: 50px 0px
+
+        .contacto-container
+            display: flex
+            justify-content: center
+            align-content: center
+            align-items: center
+            max-width: 300px
+            font-family: $regular
+            padding: 0px 0px 80px
+
+            .g-3
+                display: flex
+                justify-content: center
+                align-content: center
+                align-items: center
+
+            .btn-primary
+                box-shadow: none
 
 #footer
     background-color: rgb(30, 30, 30)
@@ -1061,6 +1080,37 @@ button
                 color: $basecolor
                 font-size: $sizeh3
                 padding: 60px
+
+    #contacto
+
+        .container
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
+            padding: 0px 20px
+
+            .contacto-h2
+                padding: 50px 0px
+
+            .contacto-container
+                display: flex
+                justify-content: center
+                align-content: center
+                align-items: center
+                max-width: 500px
+                font-family: $regular
+                padding: 0px 0px 80px
+
+                .g-3
+                    display: flex
+                    justify-content: center
+                    align-content: center
+                    align-items: center
+
+                .btn-primary
+                    box-shadow: none
 
 @media ( min-width: 610px )
 
