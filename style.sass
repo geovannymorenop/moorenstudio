@@ -518,11 +518,15 @@ button
             justify-content: center
             align-items: center
             max-width: 250px
+            padding-bottom: 30px
 
             h2
                 font-size: $sizeh2
                 color: $basecolor
                 padding-top: 50px
+
+            .porta-parraf
+                padding: 20px 0px
 
             .texto2
                 display: flex
@@ -531,36 +535,36 @@ button
                 align-items: center
                 max-width: 250px
                 
-                p
+                .porta-parraf2
                     font-family: $bold
+                    padding: 10px 0px
 
-
-        h2 
+        .behance 
             display: flex
             text-decoration: none
             color: $basecolor
             font-size: $sizep
-            padding-bottom: 30px
+            padding: 40px
+
 
         .galeria-grid
-            padding-top: 5px
-            padding-bottom: 10px
             display: grid
             grid-template-columns: repeat(2, 1fr)
             grid-auto-rows: 160px
             grid-template-areas:"img1 img2""img3 img4""img5 img6""img7 img8""img9 img10""img11 img12""img13 img14"
             gap: .8em
 
-        .portafolio-galeria
-            position: relative
-            cursor: pointer
-            overflow: hidden
+            .portafolio-galeria
+                position: relative
+                cursor: pointer
+                overflow: hidden
+                margin: 0
 
             .portafolio-galeria:hover::before
                 transform: scale(100%)
 
             .portafolio-galeria-foto1
-                    grid-area: img1
+                grid-area: img1
 
             .portafolio-galeria-foto2
                 grid-area: img2
@@ -594,6 +598,12 @@ button
 
             .portafolio-galeria-foto12
                 grid-area: img12
+
+            .portafolio-galeria-foto13
+                grid-area: img13
+
+            .portafolio-galeria-foto14
+                grid-area: img14
 
             .galeria-img
                 width: 100%
@@ -965,6 +975,93 @@ button
                         display: block
                         padding: 10px 0px
 
+    #portafolio
+
+        .contenedor
+
+            .texto
+                padding-bottom: 30px
+                max-width: 500px
+
+                .texto2
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    align-items: center
+                    max-width: 100%
+
+                    .porta-parraf2
+                        padding: 0px 20px
+
+            .galeria-grid
+                display: grid
+                grid-template-columns: repeat(3, 1fr)
+                grid-auto-rows: 160px
+                grid-template-areas:"img1 img2 img4""img5 img3 img8""img14 img7 img9""img13 img11 img12""img10 img6 img6"
+                gap: .8em
+
+            .portafolio-galeria
+                position: relative
+                cursor: pointer
+                overflow: hidden
+
+                .portafolio-galeria:hover::before
+                    transform: scale(100%)
+
+                .portafolio-galeria-foto1
+                    grid-area: img1
+
+                .portafolio-galeria-foto2
+                    grid-area: img2
+
+                .portafolio-galeria-foto3
+                    grid-area: img3
+
+                .portafolio-galeria-foto4
+                    grid-area: img4
+
+                .portafolio-galeria-foto5
+                    grid-area: img5
+
+                .portafolio-galeria-foto6
+                    grid-area: img8
+
+                .portafolio-galeria-foto7
+                    grid-area: img14
+
+                .portafolio-galeria-foto8
+                    grid-area: img6
+
+                .portafolio-galeria-foto9
+                    grid-area: img9
+
+                .portafolio-galeria-foto10
+                    grid-area: img10
+
+                .portafolio-galeria-foto11
+                    grid-area: img11
+
+                .portafolio-galeria-foto12
+                    grid-area: img12
+
+                .portafolio-galeria-foto13
+                    grid-area: img13
+
+                .portafolio-galeria-foto14
+                    grid-area: img7
+
+                .galeria-img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+
+            .behance 
+                display: flex
+                text-decoration: none
+                color: $basecolor
+                font-size: $sizeh3
+                padding: 60px
+
 @media ( min-width: 610px )
 
     #nosotros
@@ -1020,3 +1117,32 @@ button
 
         button
             font-size: 1.8vw
+
+    #portafolio
+
+        .contenedor
+
+            .texto
+                padding-bottom: 50px
+                max-width: 800px
+
+                .texto2
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    align-items: center
+                    max-width: 100%
+
+            .galeria-grid
+                display: grid
+                grid-template-columns: repeat(4, 1fr)
+                grid-auto-rows: 200px
+                grid-template-areas:"img1 img2 img3 img4""img5 img6 img7 img8""img9 img10 img11 img12""img13 img13 img14 img14"
+                gap: 2em
+
+            .behance 
+                display: flex
+                text-decoration: none
+                color: $basecolor
+                font-size: $sizeh2
+                padding: 100px
